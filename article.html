@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Submit Article - NIJTM</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffe5b4, #fcd5b5);
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #e6d3b3, #f5f5f5);
+    padding: 10px;
+    text-align: center;
+    overflow: auto;
+}
+
+.header img {
+    height: 70px;
+    float: left;
+    margin-left: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #1a5fb4;
+}
+
+.header p {
+    margin: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0b3c5d;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 40%;
+    padding: 20px;
+}
+
+.left h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 60%;
+    padding: 20px;
+}
+
+.right h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* FILE INPUT */
+input[type="file"] {
+    background: white;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: green;
+}
+
+.clear-btn {
+    background: #00aaff;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #062f4f;
+    color: white;
+    display: flex;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.footer div {
+    width: 33%;
+}
+
+.footer h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin: 8px 0;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="logo.jpg" alt="logo">
+    <h1>NSHM INTERNATIONAL JOURNAL OF TECHNOLOGY AND MANAGEMENT</h1>
+    <p>A Peer Reviewed Journal</p>
+    <p>ISBN: XXXX-XXXX (Online)</p>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="nshm.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="editor.html">Editorial Board</a>
+    <a href="issues.html">Issues</a>
+<a href="submission.html">Submission Guidelines</a>
+    <a href="article.html">Submit Articles</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- TITLE -->
+<h1>Submit Your Article</h1>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <h2>Option : 1</h2>
+        <p>
+            Submit your manuscript (in proper format) directly to the <br><br>
+            <b>Email Id: NIJTM@nshm.edu</b> <br><br>
+            or you can use the submission form.
+        </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <h2>Option : 2</h2>
+
+        <form>
+
+            <label>Name:</label>
+            <input type="text" placeholder="Name">
+
+            <label>Email Id:</label>
+            <input type="email" placeholder="Email Id">
+
+            <label>Address:</label>
+            <textarea placeholder="Address"></textarea>
+
+            <label>Mobile No:</label>
+            <input type="text" placeholder="Mobile No.">
+
+            <label>Author Name:</label>
+            <input type="text" placeholder="Author Name">
+
+            <label>Journal Title:</label>
+            <input type="text" placeholder="Journal Title">
+
+            <label>Upload File:</label>
+            <input type="file">
+            <small>(Only PDF allowed, max 10MB)</small>
+
+            <div class="buttons">
+                <button class="submit-btn">Submit</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <div>
+        <h3>USEFUL LINKS</h3>
+       <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Submit Articles</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>CONTACT</h3>
+        <p>NSHM Knowledge Campus</p>
+        <p>Durgapur, West Bengal</p>
+        <p>Email: NIJTM@nshm.edu</p>
+    </div>
+
+    <div class="map">
+        <h3>LOCATION</h3>
+        <iframe src="https://maps.google.com/maps?q=Durgapur&output=embed"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
